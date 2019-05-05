@@ -1,0 +1,32 @@
+﻿<Window x:Class="Problem1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Problem1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="150" Margin="330,325,0,0" RenderTransformOrigin="0.5,0.5" Height="65" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.277"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="List all of the different genres for the movies Movie&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="320" Margin="0,10,0,0"/>
+        <Label Content="Which movie hs the highest IMDB score&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="320" Margin="420,10,0,0"/>
+        <Label Content="List all of the different movies that have a number of voted users with 350000 or more&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="490" Margin="130,110,0,0"/>
+        <Label Content="How many movies where Anthony Russo is the director?&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="335" Margin="0,205,0,0"/>
+        <Label Content="How many movies where Robert Downey Jr. is the actor 1&#xD;&#xA;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" Width="320" Margin="420,205,0,0"/>
+        <ListBox x:Name="lstDifferentGenres" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="265" Margin="10,35,0,0"/>
+        <ListBox x:Name="lsthighestscore" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="265" Margin="420,35,0,0"/>
+        <ListBox x:Name="lstmorethan350000" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="490" Margin="130,140,0,0"/>
+        <ListBox x:Name="lstAnthonyRusso" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="290" Margin="10,235,0,0"/>
+        <ListBox x:Name="lstRobertDowney" HorizontalAlignment="Left" Height="70" VerticalAlignment="Top" Width="305" Margin="420,235,0,0"/>
+
+    </Grid>
+</Window>
